@@ -1,0 +1,45 @@
+/* Song Filter styling */
+.song-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .song-filter input {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  .song-filter input:focus {
+    border-color: #007bff;
+  }
+  
+  .song-filter input::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  /* Responsive Design */
+  
+  /* Medium screens: Adjust the filter input width */
+  @media (max-width: 768px) {
+    .song-filter input {
+      max-width: 80%; /* Allow input to take more space on smaller screens */
+    }
+  }
+  
+  /* Small screens: Adjust the filter input width */
+  @media (max-width: 480px) {
+    .song-filter input {
+      max-width: 90%; /* Further reduce max-width for very small screens */
+    }
+  }
+  

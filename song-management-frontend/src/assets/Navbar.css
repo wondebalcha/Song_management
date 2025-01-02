@@ -1,0 +1,143 @@
+/* Base styling for the navbar */
+.navbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  margin-top: -8px;
+  margin-bottom: 200px;
+  flex-direction: column;
+  align-items: center;
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center; /* Align icons and text */
+  gap: 10px; /* Space between the icon and text */
+}
+
+.navbar ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Menu icon for mobile view */
+.navbar .menu-icon {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.navbar .menu-icon .bar {
+  height: 4px;
+  background-color: white;
+  width: 100%;
+}
+
+/* Responsive Design for Small and Medium Devices */
+
+/* Small devices (up to 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar h1 {
+    font-size: 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    display: none; /* Hide the menu links by default */
+    width: 100%;
+  }
+
+  .navbar ul.active {
+    display: flex; /* Show menu items when active */
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: green;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .navbar ul li a {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .navbar .menu-icon {
+    display: flex; /* Show menu icon */
+  }
+}
+
+/* Medium devices (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .navbar h1 {
+    font-size: 22px;
+  }
+
+  .navbar ul li a {
+    font-size: 15px;
+    padding: 6px 12px;
+  }
+}
+
+/* Large devices (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar ul {
+    gap: 20px;
+  }
+
+  .navbar ul li a {
+    font-size: 16px;
+    padding: 8px 14px;
+  }
+}
+
+/* Extra-large devices (1025px and above) */
+@media (min-width: 1025px) {
+  .navbar ul {
+    gap: 25px;
+  }
+
+  .navbar ul li a {
+    font-size: 18px;
+    padding: 10px 16px;
+  }
+}

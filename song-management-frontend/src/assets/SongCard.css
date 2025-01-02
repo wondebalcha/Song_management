@@ -1,0 +1,145 @@
+/* Base styling for the song card */
+.song-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin: 10px;
+    background-color: #fff;
+    max-width: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .song-card h2 {
+    font-size: 20px;
+    margin: 0 0 8px;
+    color: #333;
+  }
+  
+  .song-card p {
+    font-size: 14px;
+    margin: 4px 0;
+    color: #555;
+  }
+  
+  .song-card p strong {
+    color: #222;
+  }
+  
+  .action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .action-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 14px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #4caf50;
+    transition: background-color 0.3s ease;
+  }
+  
+  .action-buttons button:hover {
+    background-color: #45a049;
+  }
+  
+  .action-buttons button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  /* Small devices (up to 480px) */
+  @media (max-width: 480px) {
+    .song-card {
+      padding: 12px;
+    }
+  
+    .song-card h2 {
+      font-size: 18px;
+    }
+  
+    .song-card p {
+      font-size: 13px;
+    }
+  
+    .action-buttons button {
+      font-size: 13px;
+      padding: 6px 10px;
+    }
+  }
+  
+  /* Medium devices (481px to 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .song-card {
+      max-width: 300px;
+      padding: 14px;
+    }
+  
+    .song-card h2 {
+      font-size: 19px;
+    }
+  
+    .song-card p {
+      font-size: 14px;
+    }
+  
+    .action-buttons button {
+      font-size: 14px;
+      padding: 7px 11px;
+    }
+  }
+  
+  /* Large devices (769px to 1024px) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .song-card {
+      max-width: 350px;
+      padding: 16px;
+    }
+  
+    .song-card h2 {
+      font-size: 20px;
+    }
+  
+    .song-card p {
+      font-size: 14px;
+    }
+  
+    .action-buttons button {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+  
+  /* Extra-large devices (1025px and above) */
+  @media (min-width: 1025px) {
+    .song-card {
+      max-width: 300px;
+    }
+  
+    .song-card h2 {
+      font-size: 22px;
+    }
+  
+    .song-card p {
+      font-size: 15px;
+    }
+  
+    .action-buttons button {
+      font-size: 15px;
+      padding: 10px 14px;
+    }
+  }
+  
